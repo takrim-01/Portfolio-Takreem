@@ -135,7 +135,7 @@ function closeModal(e) {
 // ===== CERTIFICATES SECTION JS (SCOPED & PREFIXED - NO CONFLICTS) =====
 const certData = [
   { img: "cert1.jpg", title: "Web Development", desc: "Built responsive websites using HTML, CSS, and modern web design practices." },
-  { img: "cert2.jpg", title: "JavaScript", desc: "Learned to create interactive and dynamic web applications using JavaScript." },
+  { img: "cert2.jpg", title: "Java", desc: "Acquired practical understanding of Java syntax, OOP principles, and building efficient programs." },
   { img: "cert3.jpg", title: "React", desc: "Developed scalable user interfaces using React components and hooks." },
   { img: "cert4.jpg", title: "Python", desc: "Gained programming skills in Python for automation, backend, and problem-solving." },
   { img: "cert5.jpg", title: "Data Science", desc: "Worked with data analysis, visualization, and extracting insights from datasets." },
