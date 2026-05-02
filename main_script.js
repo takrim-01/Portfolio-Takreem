@@ -208,7 +208,7 @@ function certOpenModal(index) {
 function certCloseModal() {
   document.getElementById("cert-modal").style.display = "none";
 }
-}
+
 
 /* Close when clicking outside */
 window.addEventListener("click", function(event) {
