@@ -134,28 +134,80 @@ function closeModal(e) {
 }
 // ===== CERTIFICATES SECTION JS (SCOPED & PREFIXED - NO CONFLICTS) =====
 const certData = [
-  { img: "cert1.jpg", title: "Web Development", desc: "Built responsive websites using HTML, CSS, and modern web design practices." },
-  { img: "cert2.jpg", title: "Java", desc: "Acquired practical understanding of Java syntax, OOP principles, and building efficient programs." },
-  { img: "cert3.jpg", title: "React", desc: "Developed scalable user interfaces using React components and hooks." },
-  { img: "cert4.jpg", title: "Python", desc: "Gained programming skills in Python for automation, backend, and problem-solving." },
-  { img: "cert5.jpg", title: "Data Science", desc: "Worked with data analysis, visualization, and extracting insights from datasets." },
-  { img: "cert6.jpg", title: "Machine Learning", desc: "Built predictive models using core machine learning algorithms." },
-  { img: "cert7.jpg", title: "UI/UX Design", desc: "Designed intuitive and user-friendly interfaces focusing on user experience." },
-  { img: "cert8.jpg", title: "Cloud Computing", desc: "Learned cloud fundamentals and deployment of applications on cloud platforms." }
+  { 
+    img: "cert1.jpg", 
+    title: "Web Development", 
+    desc: "Built responsive websites using HTML, CSS, and modern web design practices.",
+    date: "DD MM YYYY",
+    code: "CERT-001"
+  },
+  { 
+  img: "java_cert.jpg",
+  title: "Java",                                          // ✅ Changed from "JavaScript"
+  desc: "Gained strong knowledge of Java programming including OOP concepts, data structures, and building robust applications.",  // ✅ Updated for Java
+  date: "02-04-2026",
+  code: "CC-QE8AXO0T"
+},
+  { 
+    img: "cert3.jpg", 
+    title: "React", 
+    desc: "Developed scalable user interfaces using React components and hooks.",
+    date: "DD MM YYYY",
+    code: "CERT-003"
+  },
+  { 
+    img: "cert4.jpg", 
+    title: "Python", 
+    desc: "Gained programming skills in Python for automation, backend, and problem-solving.",
+    date: "DD MM YYYY",
+    code: "CERT-004"
+  },
+  { 
+    img: "cert5.jpg", 
+    title: "Data Science", 
+    desc: "Worked with data analysis, visualization, and extracting insights from datasets.",
+    date: "DD MM YYYY",
+    code: "CERT-005"
+  },
+  { 
+    img: "cert6.jpg", 
+    title: "Machine Learning", 
+    desc: "Built predictive models using core machine learning algorithms.",
+    date: "DD MM YYYY",
+    code: "CERT-006"
+  },
+  { 
+    img: "cert7.jpg", 
+    title: "UI/UX Design", 
+    desc: "Designed intuitive and user-friendly interfaces focusing on user experience.",
+    date: "DD MM YYYY",
+    code: "CERT-007"
+  },
+  { 
+    img: "cert8.jpg", 
+    title: "Cloud Computing", 
+    desc: "Learned cloud fundamentals and deployment of applications on cloud platforms.",
+    date: "DD MM YYYY",
+    code: "CERT-008"
+  }
 ];
 
 function certOpenModal(index) {
   const modal = document.getElementById("cert-modal");
+  const cert = certData[index - 1];                                           // ✅ stored in variable
 
-  document.getElementById("cert-modal-img").src = certData[index - 1].img;
-  document.getElementById("cert-modal-title").innerText = certData[index - 1].title;
-  document.getElementById("cert-modal-text").innerText = certData[index - 1].desc;
+  document.getElementById("cert-modal-img").src   = cert.img;
+  document.getElementById("cert-modal-title").innerText = cert.title;
+  document.getElementById("cert-modal-text").innerText  = cert.desc;
+  document.getElementById("cert-modal-date").innerText  = "📅 Date: " + cert.date;         // ✅ ADDED
+  document.getElementById("cert-modal-code").innerText  = "🔖 Certificate Code: " + cert.code; // ✅ ADDED
 
   modal.style.display = "flex";
 }
 
 function certCloseModal() {
   document.getElementById("cert-modal").style.display = "none";
+}
 }
 
 /* Close when clicking outside */
