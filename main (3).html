@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Takreem Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<!-- CSS FILE -->
+<link rel="stylesheet" href="main_style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="logo">
+    <img src="logo.png" alt="Logo" />
+    Takreem
+  </div>
+
+  <div class="menu">
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#certifications" class="nav-link">Certifications</a>
+    <a href="#hire" class="hire nav-link">Hire Me</a>
+  </div>
+
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</div>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <span class="close-btn" onclick="toggleMenu()">✕</span>
+  <a href="#home" onclick="toggleMenu()">Home</a>
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#projects" onclick="toggleMenu()">Projects</a>
+  <a href="#certifications" onclick="toggleMenu()">Certifications</a>
+  <a href="#hire" onclick="toggleMenu()">Hire Me</a>
+</div>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <!-- ===== Developer Card Section ===== -->
+<link rel="stylesheet" href="home_page.css">
+
+<section class="dc-wrapper">
+  <div class="dc-container">
+
+    <div class="dc-video-box">
+      <video autoplay loop muted playsinline>
+        <source src="Takreem_video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="dc-content">
+      <h2>
+        <span class="dc-static-text">I am</span>
+        <span class="dc-changing-wrapper">
+          <span id="dc-changing"></span>
+        </span>
+      </h2>
+
+      <p>– Turning complex ideas into simple, user-friendly digital solutions.</p>
+      <p>– Making ideas go from "what if" to "done."</p>
+
+      <div class="dc-btn-group">
+        <a href="Resume_Takreem.pdf" target="_blank" class="dc-btn dc-btn-resume">Resume</a>
+        <a href="#hire" class="dc-btn dc-btn-contact">Contact Me</a>
+      </div>
+    </div>
+
+  </div>
+
+  <h1 class="dc-name">Md. Takrim Ansari</h1>
+<hr class="dc-divider-name">
+</section>
+
+<script src="home_page.js"></script>
+<!-- ===== End Developer Card Section ===== -->
+</section>
+<hr class="dc-divider">
+
+<!-- ABOUT -->
+<section id="about">
+
+
+
+<!-- ABOUT -->
+<div class="my-about">
+
+    <div class="my-about-text">
+        <h1>About Me</h1>
+        <div class="my-line"></div>
+
+        <p>I am a Computer Engineering student passionate about web development, programming, and UI/UX design.</p>
+        <p>I am constantly improving my skills and working towards becoming a full-stack developer.</p>
+
+        <a href="Resume_Takreem.pdf" class="my-btn" download>📄 Resume</a>
+        <a href="#hire" class="my-btn">🚀 Hire Me</a>
+    </div>
+
+    <div class="my-stats">
+        <div class="my-card"><h2>10+</h2>Projects</div>
+        <div class="my-card"><h2>3</h2>Certificates</div>
+        <div class="my-card"><h2>Fresher</h2>Experience</div>
+        <div class="my-card"><h2>Availability</h2>Full-Time</div>
+    </div>
+    
+</div>
+
+<!-- TAGS -->
+<div class="my-skills-tags-section">
+
+    <h2 class="my-tags-title">Tech Stack</h2>
+
+    <div class="my-skills-tags">
+
+        <div class="my-tag">🌐 HTML</div>
+        <div class="my-tag">🎨 CSS</div>
+        <div class="my-tag">⚡ JavaScript</div>
+        <div class="my-tag">⚛️ React</div>
+
+        <div class="my-tag">🐍 Python</div>
+        <div class="my-tag">☕ Java</div>
+        <div class="my-tag">💾 SQL</div>
+
+        <div class="my-tag">💻 C</div>
+        <div class="my-tag">⚙️ C++</div>
+
+        <div class="my-tag">🖌️ UI/UX</div>
+        <div class="my-tag">☁️ Basic Cloud Knowledge</div>
+        <div class="my-tag">🎨 Creativity</div>
+
+    </div>
+
+</div>
+
+<!-- SKILLS -->
+<div class="my-skills-section">
+
+    <h2 class="my-skills-heading">My Skills</h2>
+
+    <div class="my-skills-grid">
+
+        <div class="my-skills-category">
+            <h3>Frontend</h3>
+            <div class="my-skills-item"><p>HTML & CSS</p><div class="my-skills-bar"><div class="my-skills-fill" style="--level:95%"></div></div></div>
+            <div class="my-skills-item"><p>JavaScript</p><div class="my-skills-bar"><div class="my-skills-fill" style="--level:80%"></div></div></div>
+            <div class="my-skills-item"><p>UI / UX</p><div class="my-skills-bar"><div class="my-skills-fill" style="--level:95%"></div></div></div>
+        </div>
+
+        <div class="my-skills-category">
+            <h3>Backend</h3>
+            <div class="my-skills-item"><p>Node.js</p><div class="my-skills-bar"><div class="my-skills-fill" style="--level:75%"></div></div></div>
+            <div class="my-skills-item"><p>MongoDB</p><div class="my-skills-bar"><div class="my-skills-fill" style="--level:60%"></div></div></div>
+            <div class="my-skills-item"><p>REST API</p><div class="my-skills-bar"><div class="my-skills-fill" style="--level:50%"></div></div></div>
+        </div>
+
+        <div class="my-skills-category">
+            <h3>AI & Automation</h3>
+            <div class="my-skills-item"><p>Prompting & LLM APIs</p><div class="my-skills-bar"><div class="my-skills-fill" style="--level:75%"></div></div></div>
+            <div class="my-skills-item"><p>Python</p><div class="my-skills-bar"><div class="my-skills-fill" style="--level:70%"></div></div></div>
+            <div class="my-skills-item"><p>n8n / No-code</p><div class="my-skills-bar"><div class="my-skills-fill" style="--level:60%"></div></div></div>
+        </div>
+
+        <div class="my-skills-category">
+            <h3>Tools</h3>
+            <div class="my-skills-item"><p>Git / GitHub</p><div class="my-skills-bar"><div class="my-skills-fill" style="--level:70%"></div></div></div>
+            <div class="my-skills-item"><p>Figma</p><div class="my-skills-bar"><div class="my-skills-fill" style="--level:90%"></div></div></div>
+            <div class="my-skills-item"><p>Performance & A11y</p><div class="my-skills-bar"><div class="my-skills-fill" style="--level:70%"></div></div></div>
+        </div>
+
+    </div>
+
+</div>
+<hr class="dc-divider">
+
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+
+  <!-- TOP SECTION -->
+  <section class="proj-container">
+
+    <!-- LEFT SIDE -->
+    <div class="proj-left">
+      <h1 class="proj-title">My Work / Projects</h1>
+
+      <p class="proj-description">
+        I have developed multiple projects including management systems,
+        interactive applications, web-based tools, networking setups,
+        and hardware-based intelligent systems.
+      </p>
+
+      <p class="proj-description">
+        These projects have strengthened my skills in programming,
+        problem-solving, system design, and real-world implementation
+        of both software and hardware solutions.
+      </p>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="proj-right">
+
+      <div class="proj-card">
+        <h2>10+</h2>
+        <p>Projects Completed</p>
+      </div>
+
+      <div class="proj-card">
+        <h2>5+</h2>
+        <p>Technologies Used</p>
+      </div>
+
+      <div class="proj-card proj-highlight">
+        <h2>Full-Stack</h2>
+        <p>Beginner</p>
+      </div>
+
+      <div class="proj-card proj-highlight">
+        <h2>Hands-On</h2>
+        <p>Practical Experience</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PROJECT GRID -->
+  <section class="proj-grid">
+
+  <!-- 1 -->
+  <div class="proj-flip-card" onclick="openModal(1)">
+    <div class="proj-flip-inner">
+      <div class="proj-flip-front">
+        <h3>🏦 Bank System</h3>
+        <p>Click to view</p>
+      </div>
+      <div class="proj-flip-back">
+        <p>Java | SQL</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="proj-flip-card" onclick="openModal(2)">
+    <div class="proj-flip-inner">
+      <div class="proj-flip-front">
+        <h3>📚 Library System</h3>
+        <p>Click to view</p>
+      </div>
+      <div class="proj-flip-back">
+        <p>Java | File Handling</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="proj-flip-card" onclick="openModal(3)">
+    <div class="proj-flip-inner">
+      <div class="proj-flip-front">
+        <h3>❓ Quiz App</h3>
+        <p>Click to view</p>
+      </div>
+      <div class="proj-flip-back">
+        <p>Java | OOP</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="proj-flip-card" onclick="openModal(4)">
+    <div class="proj-flip-inner">
+      <div class="proj-flip-front">
+        <h3>🌐 Network Setup</h3>
+        <p>Click to view</p>
+      </div>
+      <div class="proj-flip-back">
+        <p>DCN | Packet Tracer</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="proj-flip-card" onclick="openModal(5)">
+    <div class="proj-flip-inner">
+      <div class="proj-flip-front">
+        <h3>🧑‍🎓 Attendance System</h3>
+        <p>Click to view</p>
+      </div>
+      <div class="proj-flip-back">
+        <p>Java | DB</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6 -->
+  <div class="proj-flip-card" onclick="openModal(6)">
+    <div class="proj-flip-inner">
+      <div class="proj-flip-front">
+        <h3>💱 Currency Converter</h3>
+        <p>Click to view</p>
+      </div>
+      <div class="proj-flip-back">
+        <p>JavaScript | API</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7 -->
+  <div class="proj-flip-card" onclick="openModal(7)">
+    <div class="proj-flip-inner">
+      <div class="proj-flip-front">
+        <h3>📷 QR Generator</h3>
+        <p>Click to view</p>
+      </div>
+      <div class="proj-flip-back">
+        <p>Python | JS</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8 -->
+  <div class="proj-flip-card" onclick="openModal(8)">
+    <div class="proj-flip-inner">
+      <div class="proj-flip-front">
+        <h3>🛒 E-Commerce</h3>
+        <p>Click to view</p>
+      </div>
+      <div class="proj-flip-back">
+        <p>HTML | CSS | JS</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9 -->
+  <div class="proj-flip-card" onclick="openModal(9)">
+    <div class="proj-flip-inner">
+      <div class="proj-flip-front">
+        <h3>🌦 Weather IoT</h3>
+        <p>Click to view</p>
+      </div>
+      <div class="proj-flip-back">
+        <p>Arduino | Sensors</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10 -->
+  <div class="proj-flip-card" onclick="openModal(10)">
+    <div class="proj-flip-inner">
+      <div class="proj-flip-front">
+        <h3>🚦 Traffic Light</h3>
+        <p>Click to view</p>
+      </div>
+      <div class="proj-flip-back">
+        <p>Arduino | C++</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 11 -->
+  <div class="proj-flip-card" onclick="openModal(11)">
+    <div class="proj-flip-inner">
+      <div class="proj-flip-front">
+        <h3>🚗 Obstacle Car</h3>
+        <p>Click to view</p>
+      </div>
+      <div class="proj-flip-back">
+        <p>Arduino | Robotics</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 12 -->
+  <div class="proj-flip-card" onclick="openModal(12)">
+    <div class="proj-flip-inner">
+      <div class="proj-flip-front">
+        <h3>🧭 Path Robot</h3>
+        <p>Click to view</p>
+      </div>
+      <div class="proj-flip-back">
+        <p>Arduino | IR Sensors</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+  </section>
+  <hr class="dc-divider">
+
+</section>
+
+<!-- ✅ MODAL (MUST BE OUTSIDE GRID) -->
+<div id="proj-modal" class="proj-modal" onclick="closeModal(event)">
+  <div class="proj-modal-content">
+
+    <span class="proj-close" onclick="closeModal()">&times;</span>
+
+    <div id="proj-modal-body"></div>
+
+  </div>
+</div>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+<!-- ================= CERTIFICATES SECTION START ================= -->
+<div class="certificates-section">
+
+  <!-- TOP SECTION -->
+  <div class="cert-top-section">
+
+    <div class="cert-left">
+      <h1 class="cert-title-main">My Certificates</h1>
+
+      <p class="cert-desc">
+        I have completed multiple certifications demonstrating strong practical and theoretical knowledge.
+      </p>
+
+      <p class="cert-desc">
+        These achievements reflect my dedication to continuous learning.
+      </p>
+    </div>
+
+    <div class="cert-right">
+      <div class="cert-info-box"><h2>8</h2><p>Certificates Earned</p></div>
+      <div class="cert-info-box"><h2>5+</h2><p>Technologies Covered</p></div>
+      <div class="cert-info-box"><h2>100%</h2><p>Verified</p></div>
+      <div class="cert-info-box"><h2>Hands-On</h2><p>Practical Learning</p></div>
+    </div>
+
+  </div>
+
+  <!-- CERTIFICATE GRID -->
+  <div class="cert-gallery">
+
+    <div class="cert-item">
+      <div class="cert-card" onclick="certOpenModal(1)">
+        <img src="cert1.jpg">
+      </div>
+      <p class="cert-title">Web Development</p>
+    </div>
+
+    <div class="cert-item">
+      <div class="cert-card" onclick="certOpenModal(2)">
+        <img src="cert2.jpg">
+      </div>
+      <p class="cert-title">JavaScript</p>
+    </div>
+
+    <div class="cert-item">
+      <div class="cert-card" onclick="certOpenModal(3)">
+        <img src="cert3.jpg">
+      </div>
+      <p class="cert-title">React</p>
+    </div>
+
+    <div class="cert-item">
+      <div class="cert-card" onclick="certOpenModal(4)">
+        <img src="cert4.jpg">
+      </div>
+      <p class="cert-title">Python</p>
+    </div>
+
+    <div class="cert-item">
+      <div class="cert-card" onclick="certOpenModal(5)">
+        <img src="cert5.jpg">
+      </div>
+      <p class="cert-title">Data Science</p>
+    </div>
+
+    <div class="cert-item">
+      <div class="cert-card" onclick="certOpenModal(6)">
+        <img src="cert6.jpg">
+      </div>
+      <p class="cert-title">Machine Learning</p>
+    </div>
+
+    <div class="cert-item">
+      <div class="cert-card" onclick="certOpenModal(7)">
+        <img src="cert7.jpg">
+      </div>
+      <p class="cert-title">UI/UX Design</p>
+    </div>
+
+    <div class="cert-item">
+      <div class="cert-card" onclick="certOpenModal(8)">
+        <img src="cert8.jpg">
+      </div>
+      <p class="cert-title">Cloud Computing</p>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ================= MODAL ================= -->
+<div id="cert-modal" class="cert-modal">
+  <span class="cert-close" onclick="certCloseModal()">✖</span>
+
+  <div class="cert-modal-content">
+    <img id="cert-modal-img" src="">
+    <h2 id="cert-modal-title"></h2>
+    <p id="cert-modal-text"></p>
+  </div>
+</div>
+<!-- ================= CERTIFICATES SECTION END ================= -->
+</section>
+
+
+<!-- HIRE -->
+<section id="hire">
+  <h1>
+    You can Hire Me as an Employee !
+  </h1>
+
+  <div class="container">
+
+    <!-- LEFT INFO -->
+    <div class="info">
+      <h1>Let's Work Together 🚀</h1>
+      <p>
+        I am available for freelance work, internships, and full-stack development projects.
+        Send me a message and I'll respond quickly.
+      </p>
+    </div>
+
+    <!-- FORM -->
+    <div class="form-box">
+      <h2>Hire Me</h2>
+
+      <form action="https://formspree.io/f/mrejbggw" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="organisation" placeholder="Organisation Name" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Brand -->
+    <div class="footer-box">
+      <h2>Takreem</h2>
+      <p>Full Stack Developer | UI Designer</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-box">
+      <h3>Contact</h3>
+      <p>Email: ansaritakreemraza45@gmail.com.com</p>
+      <p>Location: Mumbai, India</p>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-box">
+      <h3>Follow Me</h3>
+      <a href="www.github.com/abc">GitHub</a>
+      <a href="www.linkedin.com/abc">LinkedIn</a>
+      <a href="www.instagram.com/takreem_x_x">Instagram</a>
+    </div>
+
+  </div>
+
+ <div class="footer-bottom">
+  <div class="left-text">
+    Stay connected—no handshake required.
+  </div>
+
+  <div class="right-text">
+    © 2026 by Takrim Ansari
+  </div>
+</div>
+</footer>
+
+<!-- JS FILE -->
+<script src="main_script.js"></script>
+
+</body>
+</html>
